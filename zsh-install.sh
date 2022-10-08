@@ -10,16 +10,18 @@ OH_MY_ZSH="~/.oh-my-zsh"
 if ! command -v git &>/dev/null; then
   echo "git command could not be found"
 else
-  if [ -d "$OH_MY_ZSH" ]; then rm -Rf $OH_MY_ZSH; fi
+  if [ -d "$OH_MY_ZSH" ]; then rm -Rf "$OH_MY_ZSH"; fi
   sudo apt install zsh -y
-  curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
+  curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash -y
 
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
 
   sed -i "s/robbyrussell/strug/" ~/.zshrc
-  sed -i "s/plugins=(git)/plugins=($(NEW_LINE_TAB)git$(NEW_LINE_TAB)zsh-syntax-highlighting$(NEW_LINE_TAB)zsh-autosuggestions\n)/" ~/.zshrc
+
+  # shellcheck disable=SC2027
+  sed -i "s/plugins=(git)/plugins=("$NEW_LINE_TAB"git"$NEW_LINE_TAB"zsh-syntax-highlighting"$NEW_LINE_TAB"zsh-autosuggestions\n)/" ~/.zshrc
 
   # shellcheck disable=SC1090
-  source ~/.shrc
+  source ~/.zshrc
 fi
