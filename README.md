@@ -14,7 +14,7 @@ For manual installation look [here](https://www.freecodecamp.org/news/jazz-up-yo
 
 Copy & paste the following command into terminal
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/shell-installer/main/zsh-install.sh"  | sudo bash
+sudo apt install zsh -y && curl "https://raw.githubusercontent.com/escalopa/shell-installer/main/zsh-install.sh"  | bash
 ```
 
 ## Bash Aliases

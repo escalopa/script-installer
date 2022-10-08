@@ -9,12 +9,6 @@ if ! command -v git &> /dev/null
 then
     echo "git command could not be found"
 else
-  if [ "$(id -u)" != "0" ]; then
-    echo "This script requires sudo access to install"
-    sudo echo
-  fi
-
-  sudo apt install zsh -y
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -y)"
 
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
