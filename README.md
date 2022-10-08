@@ -17,6 +17,8 @@ Copy & paste the following command into terminal
 curl "https://raw.githubusercontent.com/escalopa/shell-installer/main/zsh-install.sh"  | bash && chsh -s $(which zsh)
 ```
 
+To add ZSH shell to `root` run `su - ` then the command above
+
 ## Bash Aliases
 
 Created bash_aliases file on your system and adds default aliases
