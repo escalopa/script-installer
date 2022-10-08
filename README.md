@@ -27,5 +27,5 @@ Created bash_aliases file on your system and adds default aliases
 
 Copy & paste the following command into terminal
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/alias-install.sh"  | sudo bash
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/alias-install.sh"  | bash
 ```
