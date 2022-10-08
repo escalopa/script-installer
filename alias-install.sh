@@ -6,6 +6,7 @@ touch ~/.bash_aliases
 
 # shellcheck disable=SC1078
 echo "
+
 #git
 alias gs='git status'
 alias ga='git add'
