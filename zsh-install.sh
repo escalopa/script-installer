@@ -5,7 +5,7 @@ set -e
 # shellcheck disable=SC2034
 NEW_LINE_TAB='\n\t'
 # shellcheck disable=SC2088
-OH_MY_ZSH="~/.oh-my-zsh"
+OH_MY_ZSH="~/.oh-my-zsh/"
 
 [ -d "$OH_MY_ZSH" ] && rm -rf "$OH_MY_ZSH"
 rm ~/.zsh*
