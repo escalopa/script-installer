@@ -19,13 +19,22 @@ curl "https://raw.githubusercontent.com/escalopa/script-installer/main/zsh-insta
 
 To add ZSH shell to `root` run `su - ` then the command above
 
-## Bash Aliases
+## Aliases
 
-Created bash_aliases file on your system and adds default aliases
+Created aliases file on your system and adds default aliases
 
 ### **Installation**
 
+### ZSH
+
 Copy & paste the following command into terminal
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/alias-install.sh"  | bash
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/zsh-alias-install.sh"  | bash
+```
+
+### Bash
+
+Copy & paste the following command into terminal
+```shell
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/bash-alias-install.sh"  | bash
 ```
