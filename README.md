@@ -2,11 +2,12 @@
 
 shell installer is a set for shell files that helps to install services on linux automatically
 
+**Requirement commands for installation `git` `curl`**
+
 ## zsh
 
 Default theme is `strug`
 
-Requirement commands for installation `git` `curl`
 
 ### **Installation**
 
