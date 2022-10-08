@@ -14,7 +14,7 @@ For manual installation look [here](https://www.freecodecamp.org/news/jazz-up-yo
 
 Copy & paste the following command into terminal
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/zsh-install.sh"  | bash && chsh -s $(which zsh)
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/script/zsh-install.sh"  | bash && chsh -s $(which zsh)
 ```
 
 To add ZSH shell to `root` run `su - ` then the command above
@@ -29,12 +29,12 @@ Created aliases file on your system and adds default aliases
 
 Copy & paste the following command into terminal
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/zsh-alias-install.sh"  | zsh
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/script/zsh-alias-install.sh"  | zsh
 ```
 
 ### Bash
 
 Copy & paste the following command into terminal
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/bash-alias-install.sh"  | bash
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/script/bash-alias-install.sh"  | bash
 ```
