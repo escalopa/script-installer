@@ -19,6 +19,8 @@ sed -i "s/robbyrussell/strug/" ~/.zshrc
 # shellcheck disable=SC2027
 sed -i "s/plugins=(git)/plugins=($NEW_LINE_TAB git $NEW_LINE_TAB zsh-syntax-highlighting $NEW_LINE_TAB zsh-autosuggestions\n)/" ~/.zshrc
 
+zsh
+
 # shellcheck disable=SC1090
 source ~/.zshrc
 
