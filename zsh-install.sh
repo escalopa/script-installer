@@ -9,7 +9,7 @@ OH_MY_ZSH="~/.oh-my-zsh/"
 
 # remove old dirs & files if exists
 [ -d "$OH_MY_ZSH" ] && rm -rf "$OH_MY_ZSH"
-rm ~/.zsh*
+rm -f ~/.zsh*
 
 # install zsh & oh-my-zsh
 sudo apt install zsh -y
