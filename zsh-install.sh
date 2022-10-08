@@ -5,13 +5,10 @@ set -e
 # shellcheck disable=SC2034
 NEW_LINE_TAB='\n\t'
 
-if ! command -v git &> /dev/null
-then
-    echo "git command could not be found"
+if ! command -v git &>/dev/null; then
+  echo "git command could not be found"
 else
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -y)"
-
-  source ~/.zshrc
+  curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -y
 
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git -~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
