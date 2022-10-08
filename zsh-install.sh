@@ -10,7 +10,7 @@ if ! command -v git &>/dev/null; then
 else
   curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git -~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
 
   sed -i "s/robbyrussell/strug/" ~/.zshrc
