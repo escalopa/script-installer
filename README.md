@@ -1,4 +1,4 @@
-# shell-installer
+# script-installer
 
 shell installer is a set of shell files that helps to install services on linux automatically
 
