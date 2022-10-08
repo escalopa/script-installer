@@ -1,8 +1,5 @@
 #!/usr/bin
 
-set -e
-
-# shellcheck disable=SC1078
 echo "
 # ALIASES
 
@@ -26,7 +23,7 @@ alias ..='cd ..'
 
 # other
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E \"state|to\ full|percentage\"'
-alias lock='gnome-screensaver-command -l'
+alias lock='gnome-screensave  r-command -l'
 " >> ~/.zshrc
 
 # shellcheck disable=SC1090

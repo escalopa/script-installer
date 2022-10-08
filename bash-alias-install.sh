@@ -1,11 +1,10 @@
 #!/usr/bin
 
-set -e
-
 touch ~/.bash_aliases
 
 # shellcheck disable=SC1078
 echo "
+# ALIASES
 
 #git
 alias gs='git status'
