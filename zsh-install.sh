@@ -4,11 +4,15 @@ set -e
 
 # shellcheck disable=SC2034
 NEW_LINE_TAB='\n\t'
+# shellcheck disable=SC2088
+OH_MY_ZSH="~/.oh-my-zsh"
 
 if ! command -v git &>/dev/null; then
   echo "git command could not be found"
 else
   sudo apt install zsh -y
+
+  if [ -d "$OH_MY_ZSH" ]; then rm -Rf $OH_MY_ZSH; fi
   curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
 
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
