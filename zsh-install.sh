@@ -26,6 +26,3 @@ zsh
 
 # shellcheck disable=SC1090
 source ~/.zshrc
-
-# shellcheck disable=SC2046
-chsh -s $(which zsh)
