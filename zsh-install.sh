@@ -5,7 +5,7 @@ set -e
 # shellcheck disable=SC2034
 NEW_LINE_TAB='\n\t'
 
-if ! git --version &> /dev/null; then
+if ! command -v git &> /dev/null; then
     echo "git command could not be found"
 else
   if [ "$(id -u)" != "0" ]; then
