@@ -1,10 +1,10 @@
 # shell-installer
 
-shell installer is a set for shell files that helps to install services on linux automatically
+shell installer is a set of shell files that helps to install services on linux automatically
 
 **Requirement commands for installation `git` `curl`**
 
-## zsh
+## ZSH
 
 Default theme is `strug`
 
