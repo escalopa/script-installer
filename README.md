@@ -29,7 +29,7 @@ Created aliases file on your system and adds default aliases
 
 Copy & paste the following command into terminal
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/zsh-alias-install.sh"  | bash
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/zsh-alias-install.sh"  | sh
 ```
 
 ### Bash
