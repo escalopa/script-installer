@@ -5,9 +5,8 @@ set -e
 touch ~/.bash_aliases
 
 # shellcheck disable=SC1078
-echo "#
-
-git
+echo "
+#git
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
@@ -22,6 +21,7 @@ alias gpl='git pull'
 alias gr='go run'
 
 # sys navigation
+alias c='clear'
 alias ..='cd ..'
 
 # other
