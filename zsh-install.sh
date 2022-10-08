@@ -10,9 +10,9 @@ OH_MY_ZSH="~/.oh-my-zsh"
 if ! command -v git &>/dev/null; then
   echo "git command could not be found"
 else
-  if [ -d "$OH_MY_ZSH" ]; then rm -Rf "$OH_MY_ZSH"; fi
+  [ -d "$OH_MY_ZSH" ] && rm -rf "$OH_MY_ZSH"
   sudo apt install zsh -y
-  curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash -y
+  curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
 
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
   git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
@@ -24,4 +24,7 @@ else
 
   # shellcheck disable=SC1090
   source ~/.zshrc
+
+  # shellcheck disable=SC2046
+  chsh -s $(which zsh)
 fi
