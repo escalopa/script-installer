@@ -10,15 +10,20 @@ Default theme is `strug`
 
 For manual installation look [here](https://www.freecodecamp.org/news/jazz-up-your-zsh-terminal-in-seven-steps-a-visual-guide-e81a8fd59a38/)
 
-### **Installation**
-
-Copy & paste the following command into terminal
+### **Installation** 
+### Debian
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/script/zsh-install.sh"  | bash && chsh -s $(which zsh)
+sudo apt install zsh -y && curl "https://raw.githubusercontent.com/escalopa/script-installer/main/script/zsh-install.sh"  | bash && chsh -s $(which zsh)
+```
+### CentOS | RHEL
+```shell
+sudo dnf install zsh -y && curl "https://raw.githubusercontent.com/escalopa/script-installer/main/script/zsh-install.sh"  | bash && chsh -s $(which zsh)
 ```
 
-To add ZSH shell to `root` run `su - ` then the command above
-After installing ZSH, you have to re-login so that changes take place
+To add ZSH shell to `root` run `su - ` then the command above that matches your system.
+
+After installing ZSH, you have to re-login so that changes take place.
+
 ## Aliases
 
 Created aliases file on your system and adds default aliases
@@ -26,15 +31,11 @@ Created aliases file on your system and adds default aliases
 ### **Installation**
 
 ### ZSH
-
-Copy & paste the following command into terminal
 ```shell
 curl "https://raw.githubusercontent.com/escalopa/script-installer/main/script/zsh-alias-install.sh"  | zsh
 ```
 
 ### Bash
-
-Copy & paste the following command into terminal
 ```shell
 curl "https://raw.githubusercontent.com/escalopa/script-installer/main/script/bash-alias-install.sh"  | bash
 ```

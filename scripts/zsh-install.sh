@@ -6,9 +6,8 @@ set -e
 NEW_LINE_TAB='\n\t'
 
 rm -f ~/.zsh*
-
-# install zsh & oh-my-zsh
-sudo apt install zsh -y
+rm -rf ~/.oh-my-zsh
+# oh-my-zsh
 curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
 
 # add plugins to zsh
