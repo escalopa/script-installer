@@ -39,3 +39,21 @@ curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/z
 ```shell
 curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/bash-alias-install.sh"  | bash
 ```
+## Promote colors
+
+**NOTE** 
+Set danger promote on root **DISCLAIMER** you must be in sudo root, to get there run `su -` and type your root password
+```shell
+echo "
+autoload -U colors && colors
+export PS1="%B%{%}%{$fg[red]%}╭─%n@%m %b%{$fg[magenta]%}%{%}%{%}in %~ %{%}$(git_prompt_info)%{$reset_color%}$(git_remote_status)
+%B%{%}%{$fg[red]%}╰$ %{%}%b"
+" >> ~/.zshrc && source ~/.zshrc
+```
+
+To reset remove the lines above from .zshrc and run
+```shell
+export PS1="%{%}╭─%n@%m %{%}%{%}in %~ %{%}$(git_prompt_info)%{$reset_color%}$(git_remote_status)
+%{%}╰$ %{%}
+"
+```
