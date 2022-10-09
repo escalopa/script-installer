@@ -41,7 +41,6 @@ curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/b
 ```
 ## Promote colors
 
-**NOTE** 
 Set danger promote on root **DISCLAIMER** you must be in sudo root, to get there run `su -` and type your root password
 ```shell
 echo "
