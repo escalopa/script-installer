@@ -1,8 +1,7 @@
 #!/usr/bin
 
 # shellcheck disable=SC2089
-ALIASES="
-# ------ aliases ------
+ALIASES="# ------ aliases ------
 
 #git
 alias gs='git status'
@@ -40,6 +39,7 @@ if test -f "$ZSHRC_PATH"; then
             . ~/.bash_aliases
   fi
   " >>~/.zshrc
+  zsh
   # shellcheck disable=SC1090
   source ~/.zshrc
 else
