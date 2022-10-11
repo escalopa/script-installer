@@ -2,7 +2,7 @@
 
 # shellcheck disable=SC2089
 ALIASES="
-# ALIASES
+# ------ aliases ------
 
 #git
 alias gs='git status'
@@ -13,7 +13,10 @@ alias gco='git checkout'
 alias gps='git push'
 alias gpl='git pull'
 
-# hardhat
+gacp () {
+ msg=$1
+ git add . && git commit -m $msg && git push origin
+}
 
 # go
 alias gr='go run'
@@ -27,16 +30,15 @@ alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E \"sta
 alias lock='gnome-screensaver-command -l'
 "
 
+touch ~/.bash_aliases
+echo "$ALIASES" >>~/.bash_aliases
+
 ZSHRC_PATH=~/.zshrc
 if test -f "$ZSHRC_PATH"; then
-  echo "$ALIASES" >>~/.zshrc
   zsh
   # shellcheck disable=SC1090
   source ~/.zshrc
 else
-  # shellcheck disable=SC1078
-  touch ~/.bash_aliases
-  echo "$ALIASES" >>~/.bash_aliases
   # shellcheck disable=SC1090
   source ~/.bashrc
 fi
