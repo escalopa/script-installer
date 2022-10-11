@@ -39,13 +39,13 @@ curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/a
 
 If you have already `strug` theme, no need to install the prompt since they are the same. 
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/prompt.sh" -o prompt.sh | bash prompt.sh default
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/prompt.sh" -o prompt.sh && bash prompt.sh default
 ```
 
 Set danger prompt on root shell,
 **YOU MUST BE IN DIR /root** so that the prompt color changes, to go there run `su -` and type root password
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/prompt.sh" -o prompt.sh | bash prompt.sh root
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/prompt.sh" -o prompt.sh && bash prompt.sh root
 ```
 
 **Uninstall**
