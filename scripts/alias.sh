@@ -35,7 +35,11 @@ echo "$ALIASES" >>~/.bash_aliases
 
 ZSHRC_PATH=~/.zshrc
 if test -f "$ZSHRC_PATH"; then
-  zsh
+  echo "
+  if [ -f ~/.bash_aliases ]; then
+            . ~/.bash_aliases
+  fi
+  " >>~/.zshrc
   # shellcheck disable=SC1090
   source ~/.zshrc
 else
