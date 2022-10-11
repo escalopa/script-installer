@@ -1,6 +1,6 @@
 # script-installer
 
-shell installer is a set of shell files that helps to install services on linux automatically
+shell installer is a set of shell files that helps to install services on linux automatically.
 
 **Requirement commands for installation `git` `curl`**
 
@@ -13,11 +13,11 @@ For manual installation look [here](https://www.freecodecamp.org/news/jazz-up-yo
 ### **Installation** 
 ### Debian
 ```shell
-sudo apt install zsh -y && curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/zsh-install.sh"  | bash && chsh -s $(which zsh)
+sudo apt install zsh -y && curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/zsh.sh"  | bash && chsh -s $(which zsh)
 ```
 ### CentOS | RHEL
 ```shell
-sudo dnf install zsh -y && curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/zsh-install.sh"  | bash && chsh -s $(which zsh)
+sudo dnf install zsh -y && curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/zsh.sh"  | bash && chsh -s $(which zsh)
 ```
 
 To add ZSH shell to `root` run `su - ` then the command above that matches your system.
@@ -26,33 +26,24 @@ After installing ZSH, you have to re-login so that changes take place.
 
 ## Aliases
 
-Created aliases file on your system and adds default aliases
+Created aliases file on your system(if not existed) and adds default aliases
 
 ### **Installation**
 
-### ZSH
+### ZSH | BASH
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/zsh-alias-install.sh"  | zsh
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/alias.sh"  | bash
 ```
 
-### Bash
-```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/bash-alias-install.sh"  | bash
-```
 ## Promote colors
 
-Set danger promote on root **DISCLAIMER** you must be in sudo root, to get there run `su -` and type your root password
+If you have already `strug` theme, no need to install the promote since they are the same. 
 ```shell
-echo "
-autoload -U colors && colors
-export PS1="%B%{%}%{$fg[red]%}╭─%n@%m %b%{$fg[magenta]%}%{%}%{%}in %~ %{%}$(git_prompt_info)%{$reset_color%}$(git_remote_status)
-%B%{%}%{$fg[red]%}╰$ %{%}%b"
-" >> ~/.zshrc && source ~/.zshrc
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/promote.sh" -o promote.sh | bash promote.sh default
 ```
 
-To reset remove the lines above from .zshrc and run
+Set danger promote on root shell,
+**YOU MUST BE IN DIR /root** so that the promote color changes, to go there run `su -` and type root password
 ```shell
-export PS1="%{%}╭─%n@%m %{%}%{%}in %~ %{%}$(git_prompt_info)%{$reset_color%}$(git_remote_status)
-%{%}╰$ %{%}
-"
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/promote.sh" -o promote.sh | bash promote.sh root
 ```
