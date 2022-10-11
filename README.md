@@ -35,20 +35,20 @@ Created aliases file on your system(if not existed) and adds default aliases
 curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/alias.sh"  | bash
 ```
 
-## Promote colors
+## prompt colors
 
-If you have already `strug` theme, no need to install the promote since they are the same. 
+If you have already `strug` theme, no need to install the prompt since they are the same. 
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/promote.sh" -o promote.sh | bash promote.sh default
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/prompt.sh" -o prompt.sh | bash prompt.sh default
 ```
 
-Set danger promote on root shell,
-**YOU MUST BE IN DIR /root** so that the promote color changes, to go there run `su -` and type root password
+Set danger prompt on root shell,
+**YOU MUST BE IN DIR /root** so that the prompt color changes, to go there run `su -` and type root password
 ```shell
-curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/promote.sh" -o promote.sh | bash promote.sh root
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/prompt.sh" -o prompt.sh | bash prompt.sh root
 ```
 
 **Uninstall**
 
-To remove color promote from your shell you have to manually remove the `export PS1="***"` from your shell file `~/.zshrc` or `~/.bashrc`
+To remove color prompt from your shell you have to manually remove the `export PS1="***"` from your shell file `~/.zshrc` or `~/.bashrc`
 then run `source ~/.SHELL_FILE_NAME`.

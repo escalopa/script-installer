@@ -35,5 +35,5 @@ fi
 source $PATH
 
 # remove file after installation
-rm -rf ~/promote.sh
+rm -rf ~/prompt.sh
 
