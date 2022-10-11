@@ -47,3 +47,8 @@ Set danger promote on root shell,
 ```shell
 curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/promote.sh" -o promote.sh | bash promote.sh root
 ```
+
+**Uninstall**
+
+To remove color promote from your shell you have to manually remove the `export PS1="***"` from your shell file `~/.zshrc` or `~/.bashrc`
+then run `source ~/.SHELL_FILE_NAME`.
