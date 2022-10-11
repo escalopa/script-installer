@@ -2,8 +2,7 @@
 
 # shellcheck disable=SC2034 disable=SC2154
 STRUG_DEFAULT="%{%}╭─%n@%m %{%}%{%}in %~ %{%}$(git_prompt_info)%{$reset_color%}$(git_remote_status)
-%{%}╰$ %{%}
-"
+%{%}╰$ %{%}"
 
 # shellcheck disable=SC1087
 STRUG_ROOT="%B%{%}%{$fg[red]%}╭─%n@%m %b%{$fg[magenta]%}%{%}%{%}in %~ %{%}$(git_prompt_info)%{$reset_color%}$(git_remote_status)
