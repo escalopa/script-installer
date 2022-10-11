@@ -1,9 +1,7 @@
 #!/usr/bin
 
-touch ~/.bash_aliases
-
-# shellcheck disable=SC1078
-echo "
+# shellcheck disable=SC2089
+ALIASES="
 # ALIASES
 
 #git
@@ -27,7 +25,18 @@ alias ..='cd ..'
 # other
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E \"state|to\ full|percentage\"'
 alias lock='gnome-screensaver-command -l'
-" >> ~/.bash_aliases
+"
 
-# shellcheck disable=SC1090
-source ~/.bashrc
+ZSHRC_PATH=~/.zshrc
+if test -f "$ZSHRC_PATH"; then
+  echo "$ALIASES" >>~/.zshrc
+  zsh
+  # shellcheck disable=SC1090
+  source ~/.zshrc
+else
+  # shellcheck disable=SC1078
+  touch ~/.bash_aliases
+  echo "$ALIASES" >>~/.bash_aliases
+  # shellcheck disable=SC1090
+  source ~/.bashrc
+fi
