@@ -30,7 +30,11 @@ Created aliases file on your system(if not existed) and adds default aliases
 
 ### **Installation**
 
-### ZSH | BASH
+### Zsh
+```shell
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/alias.sh"  | zsh
+```
+### Bash
 ```shell
 curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/alias.sh"  | bash
 ```
