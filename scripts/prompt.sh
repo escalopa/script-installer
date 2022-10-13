@@ -6,7 +6,7 @@ STRUG_DEFAULT="%{%}╭─%n@%m %{%}%{%}in %~ %{%}$(git_prompt_info)%{$reset_colo
 
 # shellcheck disable=SC1087
 # shellcheck disable=SC1078
-STRUG_ROOT="%B%{%}%{$fg[red]%}╭─%n@%m %b%{$fg[magenta]%}%{%}%{%}in %~ %{%}$(git_prompt_info)%{$reset_color%}$(git_remote_status)
+STRUG_ROOT="%B%{%}%{$fg[red]%}╭─%n💀%m %b%{$fg[magenta]%}%{%}%{%}in %~ %{%}$(git_prompt_info)%{$reset_color%}$(git_remote_status)
 %B%{%}%{$fg[red]%}╰$ %{%}%b"
 
 # shellcheck disable=SC2147 disable=SC2088 disable=SC2123
