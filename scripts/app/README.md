@@ -1,6 +1,4 @@
-# App
-
-## Install 
+# Application Install Scripts
 
 ### PG Admin
 ```shell
