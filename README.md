@@ -4,6 +4,8 @@ shell installer is a set of shell files that helps to install services on linux 
 
 **Requirement commands for installation `git` `curl`**
 
+For applications installation see [here](https://github.com/escalopa/script-installer/tree/main/scripts/app)
+
 ## ZSH
 
 Default theme is `strug`
