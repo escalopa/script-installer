@@ -24,5 +24,5 @@ curl https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/ap
 ### Teams
 
 ```shell
-curl https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/app/pgadmin.sh | zsh
+curl https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/app/teams.sh | zsh
 ```
