@@ -20,3 +20,9 @@ curl https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/ap
 ```shell
 curl https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/app/virtual-box.sh | zsh
 ```
+
+### Teams
+
+```shell
+curl https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/app/pgadmin.sh | zsh
+```
