@@ -54,6 +54,11 @@ Set danger prompt on root shell,
 curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/prompt.sh" -o prompt.sh && bash prompt.sh root
 ```
 
+## FRR
+```shell
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/frr.sh"  | bash
+```
+
 **Uninstall**
 
 To remove color prompt from your shell you have to manually remove the `export PS1="***"` from your shell file `~/.zshrc` or `~/.bashrc`
