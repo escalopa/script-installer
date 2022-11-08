@@ -9,4 +9,4 @@ FRRVER="frr-stable"
 echo deb https://deb.frrouting.org/frr $(lsb_release -s -c) $FRRVER | sudo tee -a /etc/apt/sources.list.d/frr.list
 
 # update and install FRR
-sudo apt update && sudo apt install frr frr-pythontools
+sudo apt update && sudo apt install frr frr-pythontools -y
