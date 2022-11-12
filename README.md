@@ -54,12 +54,18 @@ Set danger prompt on root shell,
 curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/prompt.sh" -o prompt.sh && bash prompt.sh root
 ```
 
+**Uninstall**
+
+To remove color prompt from your shell you have to manually remove the `export PS1="***"` from your shell file `~/.zshrc` or `~/.bashrc`
+then run `source ~/.SHELL_FILE_NAME`.
+
 ## FRR
 ```shell
 curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/frr.sh"  | bash
 ```
 
-**Uninstall**
+## Ansible
+```shell
+curl "https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/ansible.sh"  | bash
+```
 
-To remove color prompt from your shell you have to manually remove the `export PS1="***"` from your shell file `~/.zshrc` or `~/.bashrc`
-then run `source ~/.SHELL_FILE_NAME`.
