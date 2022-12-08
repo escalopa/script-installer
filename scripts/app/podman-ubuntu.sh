@@ -1,7 +1,7 @@
 set -e
 
 echo "Enter Password"
-sudo
+sudo echo ""
 
 echo "\nInstalling Podman..."
 
