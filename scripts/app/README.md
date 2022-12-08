@@ -1,5 +1,10 @@
 # Application Install Scripts
 
+### Podman
+```
+curl https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/app/podman-ubuntu.sh | sh
+```
+
 ### PG Admin
 ```shell
 curl https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/app/pgadmin.sh | zsh
