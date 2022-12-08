@@ -5,15 +5,14 @@ sudo echo ""
 
 echo "\nInstalling Podman..."
 
-sudo mkdir -p /etc/apt/keyrings
-sudo apt-get install wget gnupg2 -y
+source /etc/os-release
+sh -c "echo 'deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /' > /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list"
+Next, download and add the GPG key with the following command:
 
-curl -fsSL https://download.opensuse.org/repositories/devel:kubic:libcontainers:unstable/xUbuntu_$(lsb_release -rs)/Release.key \
-  | gpg --dearmor \
-  | sudo tee /etc/apt/keyrings/devel_kubic_libcontainers_unstable.gpg > /dev/null
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/devel_kubic_libcontainers_unstable.gpg]\
-    https://download.opensuse.org/repositories/devel:kubic:libcontainers:unstable/xUbuntu_$(lsb_release -rs)/ /" \
-  | sudo tee /etc/apt/sources.list.d/devel:kubic:libcontainers:unstable.list > /dev/null
-sudo apt-get update -qq
-sudo apt-get -qq -y install podman
+wget -nv https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/xUbuntu_${VERSION_ID}/Release.key -O- | apt-key add -
+Next, update the repository and install Podman with the following command:
+
+apt-get update -qq -y
+apt-get -qq --yes install podman
+
+podman --version
