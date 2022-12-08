@@ -1,3 +1,10 @@
+set -e
+
+echo "Enter Password"
+sudo
+
+echo "\nInstalling Podman..."
+
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.opensuse.org/repositories/devel:kubic:libcontainers:unstable/xUbuntu_$(lsb_release -rs)/Release.key \
   | gpg --dearmor \
