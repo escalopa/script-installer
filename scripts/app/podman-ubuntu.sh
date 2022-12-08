@@ -3,7 +3,7 @@ set -e
 echo "Enter Password"
 sudo echo ""
 
-sudo --sh -c '
+sudo -- sh -c '
   echo "Installing Podman..."
 
   source /etc/os-release
