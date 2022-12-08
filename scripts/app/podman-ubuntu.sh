@@ -6,6 +6,8 @@ sudo echo ""
 echo "\nInstalling Podman..."
 
 sudo mkdir -p /etc/apt/keyrings
+sudo apt-get install wget gnupg2 -y
+
 curl -fsSL https://download.opensuse.org/repositories/devel:kubic:libcontainers:unstable/xUbuntu_$(lsb_release -rs)/Release.key \
   | gpg --dearmor \
   | sudo tee /etc/apt/keyrings/devel_kubic_libcontainers_unstable.gpg > /dev/null
