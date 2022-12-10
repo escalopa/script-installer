@@ -17,7 +17,7 @@ curl https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/ap
 
 ### Docker CLI
 ```shell
-curl https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/app/docker.sh | zsh
+curl https://raw.githubusercontent.com/escalopa/script-installer/main/scripts/app/docker.sh | zsh && sudo apt install -y docker-ce docker-ce-cli containerd.io
 ```
 
 ### Docker Desktop
